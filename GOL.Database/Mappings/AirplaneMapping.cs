@@ -25,7 +25,10 @@ namespace GOL.Database.Mappings
                 .HasColumnName("QtdPassageiros")
                 .HasColumnType("int")
                 .IsRequired();
-
+            builder.Property(o => o.DataCriacao)
+                .HasColumnName("DataCriacao")
+                .HasColumnType("Datetime")
+                .IsRequired();
         }
     }
 }
